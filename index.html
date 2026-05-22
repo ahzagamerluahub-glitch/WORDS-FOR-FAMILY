@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Keluarga Tersayang ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="heart-bg" id="heartsContainer"></div>
+  
+  <div class="container">
+    <div class="card">
+      <h1 class="title">Untuk Keluarga ❤️</h1>
+      
+      <!-- API Key Input Section -->
+      <div class="api-section">
+        <input type="password" id="apiKey" placeholder="Masukkan API Key OpenAI kamu..." />
+        <small>💡 AI akan otomatis buat kata-kata感动 Based Button Yang Di Klik!</small>
+      </div>
+      
+      <!-- Message Display Area -->
+      <div class="message-box" id="messageBox">
+        Hai keluarga tersayang...<br><br>
+        Klik tombol di bawah untuk生成 pesan otomatis dari AI untuk keluarga kamu! ❤️
+      </div>
+      
+      <!-- Family Buttons Grid -->
+      <div class="family-grid">
+        <button class="fam-btn btn-mama" onclick="generateMsg('Mama', this)">
+          <i class="fas fa-heart"></i> Mama
+        </button>
+        <button class="fam-btn btn-papa" onclick="generateMsg('Papa', this)">
+          <i class="fas fa-heart"></i> Papa
+        </button>
+        <button class="fam-btn btn-kakak" onclick="generateMsg('Kakak', this)">
+          <i class="fas fa-user"></i> Kakak
+        </button>
+        <button class="fam-btn btn-adik" onclick="generateMsg('Adik', this)">
+          <i class="fas fa-child"></i> Adik
+        </button>
+        <button class="fam-btn btn-oma" onclick="generateMsg('Oma', this)">
+          <i class="fas fa-dove"></i> Oma
+        </button>
+        <button class="fam-btn btn-opa" onclick="generateMsg('Opa', this)">
+          <i class="fas fa-dove"></i> Opa
+        </button>
+        <button class="fam-btn btn-bibi" onclick="generateMsg('Bibi', this)">
+          <i class="fas fa-female"></i> Bibi
+        </button>
+        <button class="fam-btn btn-om" onclick="generateMsg('Om', this)">
+          <i class="fas fa-male"></i> Om
+        </button>
+      </div>
+      
+      <p class="note">💝 Pesan dibuat otomatis oleh AI dengan cinta ❤️</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
